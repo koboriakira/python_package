@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="koboripackage",
-    version='1.2',
+    version='1.0',
     description='Pythonのディレクトリ構成のテスト用',
     author='Kobori Akira',
     author_email='private.beats@gmail.com',
