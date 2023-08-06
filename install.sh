@@ -1,7 +1,8 @@
 #!/bin/bash
+VERSION="1.0.1"
 
-VERSION="1.0.0"
-PROJECT_NAME=$1
+echo "Please enter a project name:"
+read PROJECT_NAME
 PROJECT_NAME_WITHOUT_HYPHEN=${PROJECT_NAME//-/_}
 
 # ダウンロードして解凍する
