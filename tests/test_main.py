@@ -1,5 +1,5 @@
-from koboripackage import koboripackage
+from koboripackage import main
 
 
 def test_multiply():
-    assert koboripackage.multiply(2, 3) == 6
+    assert main.multiply(2, 3) == 6
