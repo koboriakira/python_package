@@ -10,9 +10,12 @@ mv ./hoge/koboripackage.py main.py
 mv ./tests/test_koboripackage.py ./tests/test_main.py
 sed -i -e "s/koboripackage/hoge/g" ./tests/test_main.py
 
-# Dockerfileのkoboripackageをリネーム
+# Dockerfile
 sed -i -e "s/koboripackage/hoge/g" Dockerfile
 
-# setup.pyのkoboripackageをリネーム
+# setup.py
 sed -i -e "s/koboripackage/hoge/g" setup.py
 sed -i -e "s/python_package/hoge/g" setup.py
+
+# .gitignore
+sed -i -e "s/koboripackage/hoge/g" .gitignore
