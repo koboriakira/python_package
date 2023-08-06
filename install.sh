@@ -21,4 +21,4 @@ sed -i -e "s/python_package/$PROJECT_NAME_WITHOUT_HYPHEN/g" setup.py
 sed -i -e "s/koboripackage = koboripackage.cli:execute/$PROJECT_NAME = $PROJECT_NAME_WITHOUT_HYPHEN.cli:execute/g" setup.py
 
 # .gitignore
-sed -i -e "s/koboripackage/$PROJECT_NAME_WITHOUT_HYPHEN/g" .gitignore
+sed -i -e "s/koboripackage/$PROJECT_NAME/g" .gitignore
