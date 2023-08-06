@@ -1,12 +1,14 @@
 #!/bin/bash
 
+VERSION="1.0.0"
 PROJECT_NAME=$1
 PROJECT_NAME_WITHOUT_HYPHEN=${PROJECT_NAME//-/_}
 
-
-# クローンして、ディレクトリに移動
-# git clone git@github.com:koboriakira/python_package.git $PROJECT_NAME
-# cd $PROJECT_NAME
+# ダウンロードして解凍する
+wget https://github.com/koboriakira/python_package/archive/refs/tags/v$VERSION.zip
+unzip v$VERSION.zip
+mv python_package-$VERSION $PROJECT_NAME
+cd $PROJECT_NAME
 
 # ディレクトリを変更
 mv koboripackage $PROJECT_NAME_WITHOUT_HYPHEN
