@@ -8,8 +8,10 @@ PROJECT_NAME_WITHOUT_HYPHEN=${PROJECT_NAME//-/_}
 # git clone git@github.com:koboriakira/python_package.git $PROJECT_NAME
 # cd $PROJECT_NAME
 
-# リネーム処理
+# ディレクトリを変更
 mv koboripackage $PROJECT_NAME_WITHOUT_HYPHEN
+
+# ./tests/test_main.py
 sed -i -e "s/koboripackage/$PROJECT_NAME_WITHOUT_HYPHEN/g" ./tests/test_main.py
 rm -f ./tests/test_main.py-e
 
